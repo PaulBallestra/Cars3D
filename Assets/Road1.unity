@@ -2169,6 +2169,12 @@ PrefabInstance:
       objectReference: {fileID: 2100000, guid: f71bce113cac26544b644949051a3eb5, type: 2}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: aee592ef114162243b04b1bf9621c3b9, type: 3}
+--- !u!1 &64550239 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 155486, guid: aee592ef114162243b04b1bf9621c3b9,
+    type: 3}
+  m_PrefabInstance: {fileID: 64550238}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1001 &65442310
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -36122,6 +36128,18 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d99a91157059d4fbc946d3fbd202b4a0, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  corpsVoiture: {fileID: 64550239}
+  skins:
+  - {fileID: 2800000, guid: d816a151cc34d9c4e9d9f4e0067c6056, type: 3}
+  - {fileID: 2800000, guid: 2c0b92d5d95653241a1432123aa5b1da, type: 3}
+  - {fileID: 2800000, guid: e94524faa759aa14ca14d9204c2554e5, type: 3}
+  - {fileID: 2800000, guid: 6854586f92f29a94aa3fb80544562a15, type: 3}
+  - {fileID: 2800000, guid: 5a545e3c939cf6147b7717a1397baaf7, type: 3}
+  - {fileID: 2800000, guid: 4d3b2e504cd7e7a4aa799ef032a9a07d, type: 3}
+  - {fileID: 2800000, guid: a91b6e116688588499ac503c6171861b, type: 3}
+  - {fileID: 2800000, guid: 6a0ecfe7513688540a4717e150932be2, type: 3}
+  - {fileID: 2800000, guid: de9f4653fc6e5ef47b53564894a9f26b, type: 3}
+  - {fileID: 2800000, guid: ef22a5db5a5ce114cb698d11b79b9b9b, type: 3}
   roueAG: {fileID: 1232371765}
   roueAD: {fileID: 1419822644}
   rb: {fileID: 971113433}

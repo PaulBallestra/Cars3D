@@ -5,6 +5,11 @@ using UnityEngine;
 public class CarController : MonoBehaviour
 {
 
+    public GameObject corpsVoiture;
+    Renderer rend;
+
+    public Texture[] skins;
+
     public GameObject roueAG; //On stocke les go des roues avants 
     public GameObject roueAD;
 
@@ -21,6 +26,12 @@ public class CarController : MonoBehaviour
 
     void Start(){
         defaultRotation = roueAD.transform.localRotation; //On stocke la rotation de base des roues
+
+        rend = corpsVoiture.GetComponent<Renderer>();
+        int nbSkin = PlayerPrefs.GetInt("Skin");
+
+        rend.material.SetTexture("Skins", skins[nbSkin]); //on change la texture
+
     }
 
     void Update(){
