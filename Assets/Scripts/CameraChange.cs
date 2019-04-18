@@ -23,7 +23,7 @@ public class CameraChange : MonoBehaviour
     void Update(){
 
         //Si l'user appui sur la touche R alors on change de caméra
-        if(Input.GetKeyDown(KeyCode.R)){
+        if(Input.GetKeyDown(KeyCode.C)){
 
             changeCam = !changeCam; //on inverse le bool
 
