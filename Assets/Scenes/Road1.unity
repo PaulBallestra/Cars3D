@@ -39893,12 +39893,9 @@ MonoBehaviour:
   compteAReboursSound: {fileID: 8300000, guid: e0ada45a564fc432ab758038b7d86e26, type: 3}
   finCompteAReboursSound: {fileID: 8300000, guid: f83d2d5a84cbf4d5784ef326aa703b73,
     type: 3}
+  musiqueAmbiance: {fileID: 8300000, guid: 87368bfce8ef7d14ab2a07892b314155, type: 3}
   temps: 120
   compteARebours: 3
-  played3: 0
-  played2: 0
-  played1: 0
-  played0: 0
 --- !u!1001 &971312251
 PrefabInstance:
   m_ObjectHideFlags: 0

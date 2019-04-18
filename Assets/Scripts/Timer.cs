@@ -10,6 +10,7 @@ public class Timer : MonoBehaviour{
 
     public AudioClip compteAReboursSound; //Création du son de compte a rebours
     public AudioClip finCompteAReboursSound; //Création du son de fin du compte a rebours
+    public AudioClip musiqueAmbiance; //Création de l'audio clip pour la musique
 
     CarController carsScript; //Script de controle de la voiture
 
@@ -43,19 +44,19 @@ public class Timer : MonoBehaviour{
         switch (Mathf.RoundToInt(compteARebours)){ //en fonction de chaque nombre on joue un son
             case 3: 
                 if(played3 == false){
-                    GetComponent<AudioSource>().PlayOneShot(compteAReboursSound, 0.5f); //on lance le son
+                    GetComponent<AudioSource>().PlayOneShot(compteAReboursSound, 0.45f); //on lance le son
                     played3 = true; //on met son booléen a true pour éviter de le jouer plusieurs fois
                 }
                 break;
             case 2:
                 if(played2 == false){
-                    GetComponent<AudioSource>().PlayOneShot(compteAReboursSound, 0.5f);
+                    GetComponent<AudioSource>().PlayOneShot(compteAReboursSound, 0.45f);
                     played2 = true;
                 }
                 break;
             case 1:
                 if(played1 == false){
-                    GetComponent<AudioSource>().PlayOneShot(compteAReboursSound, 0.5f);
+                    GetComponent<AudioSource>().PlayOneShot(compteAReboursSound, 0.45f);
                     played1 = true;
                 }
                 break;
@@ -86,8 +87,9 @@ public class Timer : MonoBehaviour{
 
             //Si on commence la course alors on lance le son correspondant
             if(played0 == false){
-                GetComponent<AudioSource>().PlayOneShot(finCompteAReboursSound, 0.5f); //Changement de son pour indiquer le début de la course
+                GetComponent<AudioSource>().PlayOneShot(finCompteAReboursSound, 0.45f); //Changement de son pour indiquer le début de la course
                 played0 = true; //on met son booléen a true pour éviter de le jouer plusieurs fois
+                GetComponent<AudioSource>().PlayOneShot(musiqueAmbiance, 0.5f); //Lancement de la musique de fond de la course
             }
 
             if(temps <= 0.0f){ //Si le timer atteint 0
