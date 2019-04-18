@@ -1,6 +1,7 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class CarController : MonoBehaviour
 {
@@ -35,6 +36,10 @@ public class CarController : MonoBehaviour
     }
 
     void Update(){
+        
+        if(Input.GetKeyDown(KeyCode.R)){
+            SceneManager.LoadScene("Menu", LoadSceneMode.Single); //Chargement du menu
+        }
 
         rotationRoue += Time.deltaTime * speed;
         rotationRoueRecul += Time.deltaTime * reculspeed * -0.5f;
