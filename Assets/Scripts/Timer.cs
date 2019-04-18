@@ -25,6 +25,10 @@ public class Timer : MonoBehaviour{
     // Start is called before the first frame update
     void Start(){
 
+        //changement de la taille de police des labels
+        txtTimer.fontSize = 30;
+        txtDebTimer.fontSize = 30;
+
         txtDebTimer.enabled = true; //Activation du compte a rebours
         txtTimer.enabled = false; //désactivation du premier timer
         txtDebTimer.text = "Depart : " + compteARebours.ToString(); //Affichage du compte a rebours
@@ -32,6 +36,12 @@ public class Timer : MonoBehaviour{
         carsScript = GetComponent<CarController>(); //on chope le script du carcontroller 
         carsScript.enabled = false; //on le désactive pour éviter que la voiture parte pendant le compte a rebours
 
+    }
+
+    void OnGUI(){
+        //On place correctement les labels au millieu en haut de l'écran
+        txtTimer.alignment = TextAnchor.UpperCenter; //centré horizontalement en haut
+        txtDebTimer.alignment = TextAnchor.MiddleCenter;
     }
 
     // Update is called once per frame
