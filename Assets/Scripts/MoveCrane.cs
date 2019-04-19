@@ -3,10 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 
 public class MoveCrane : MonoBehaviour
-{   
-
-    float maxRound = 60.0f; //On sauvegarde les degrés pour la rotation de la grue
-    float minRound = -40.0f;
+{
 
     CheckpointScript chkScript;//On récupere ce script afin de jauger les animations
     public GameObject checkPoint; //go du joueur pour récuperer le num de son tour
