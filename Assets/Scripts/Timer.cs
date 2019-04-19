@@ -14,7 +14,6 @@ public class Timer : MonoBehaviour{
 
     CarController carsScript; //Script de controle de la voiture
 
-    bool isFinished = false; //Booléen qui stocke si le joueur a fini le parcours ou non
     public float temps = 120.0f; //float qui contient le temps max
     public float compteARebours = 4.0f; //int qui contient le compte a rebours
 
@@ -75,7 +74,7 @@ public class Timer : MonoBehaviour{
         if(compteARebours <= 1){ //si le compte a rebour atteint 0 on lance la course
 
             //On réactive le script du controle de la voiture
-            carsScript.enabled = true;
+            //carsScript.enabled = true;
 
             //On désactive le compte a rebours et on active le timer
             txtDebTimer.enabled = false;
@@ -110,6 +109,9 @@ public class Timer : MonoBehaviour{
 
     //Procédure qui affiche si le joueur a gagné ou non
     void finDePartie(bool win){
+
+        //On désactive son script de controlle
+        GetComponent<CarController>().enabled = false;
 
         if(win){ //Si le joueur a gagné
             txtTimer.text = "Gagné !";

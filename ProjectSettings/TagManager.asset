@@ -5,6 +5,7 @@ TagManager:
   serializedVersion: 2
   tags:
   - Coins
+  - Trucks
   layers:
   - Default
   - TransparentFX
