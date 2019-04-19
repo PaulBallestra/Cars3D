@@ -21,8 +21,8 @@ public class cube : MonoBehaviour
         //pos.x += hFMathf.Sin(Time.time * speed) *  distance;
         //transform.position = pos;
 
-        transform.Translate(Vector3.forward * Time.deltaTime * );
-        transform.Rotate(0, Input.GetAxis("Horizontal"), 0, Space.Self);
+        //transform.Translate(Vector3.forward * Time.deltaTime * speed);
+        //transform.Rotate(0, Input.GetAxis("Horizontal"), 0, Space.Self);
 
     }
 }

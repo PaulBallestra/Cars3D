@@ -74,7 +74,7 @@ public class Timer : MonoBehaviour{
         if(compteARebours <= 1){ //si le compte a rebour atteint 0 on lance la course
 
             //On réactive le script du controle de la voiture
-            //carsScript.enabled = true;
+            carsScript.enabled = true;
 
             //On désactive le compte a rebours et on active le timer
             txtDebTimer.enabled = false;

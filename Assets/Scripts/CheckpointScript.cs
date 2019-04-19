@@ -15,7 +15,8 @@ public class CheckpointScript : MonoBehaviour
 
     //Gameobjects
     public GameObject arbreFall1; //GO de la branche qui va tomber
-    public GameObject truck1; //Go du truck
+    public GameObject truckDumper; //Go du truck
+    public GameObject brancheCamion; //branche
 
     public int numTour = 1; //création de la variable qui va contenir le numéro du tour actuel
 
@@ -23,7 +24,7 @@ public class CheckpointScript : MonoBehaviour
     void Start(){
         
         animBrancheT2 = arbreFall1.GetComponent<Animation>(); //On récupère son anim
-        animTruckT2 = truck1.GetComponent<Animation>(); //on récupère le go du truck
+        animTruckT2 = truckDumper.GetComponent<Animation>(); //on récupère le go du truck
     }
 
     // Update is called once per frame
@@ -44,6 +45,11 @@ public class CheckpointScript : MonoBehaviour
             }
 
             if(numTour == 2){ //Si on commence le tour 3
+                
+                //ON place bien le camion qui va prendre le bout de bois
+                brancheCamion.transform.position = new Vector3(-328, 8,278); //on met la branche dans le camion
+                brancheCamion.transform.localRotation = Quaternion.Euler(-178,-90,-197); //Rotation de la branche
+
                 Debug.Log("Tour 3");
             }
 
